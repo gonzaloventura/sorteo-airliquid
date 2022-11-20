@@ -1,0 +1,59 @@
+.randomnames{
+    display: grid;
+    grid-template: "a a a a" auto;
+    .box {
+        margin: 0px 20px;
+        padding: 10px 40px;
+        list-style: none;
+        max-height: 400px;
+        overflow: hidden;
+        max-width: 200px;
+        color: rgba(184, 8, 20, 1);
+        text-shadow: 0px 0px 4px rgba(184, 8, 20, 0.5);
+        
+        li{
+            font-size: 20px;
+            margin-bottom: 20px;
+            animation: ruleta 20s linear;
+            animation-iteration-count: infinite;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.speed{
+    .box {
+        li{
+            animation: ruleta 2s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes ruleta {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1227px);
+    }
+  }
+
+  .blackblur{
+    height: 30px;
+    background: #000000;
+    z-index: 10;
+    width: 90%;
+    filter: blur(10px);
+    
+  }
+
+  .top{
+    margin-bottom: -10px;
+    box-shadow: 0px 20px 15px #000000;
+  }
+
+  .bottom{
+    margin-top: -10px;
+    box-shadow: 0px -20px 15px #000000;
+  }

@@ -1,0 +1,30 @@
+:root {
+	--clr-neon: rgb(43, 154, 245);
+    --clr-neon2: rgb(245, 43, 43);
+	--clr-white: rgba(255, 255, 255, 1);
+}
+
+.btn-sortear {
+    z-index: 1;
+    margin-top: 40px;
+	padding: 20px;
+	height: 160px;	
+    border-radius: 0 50% 50% 50%;
+    font-weight: 700;
+    outline: none;
+    cursor: url('../assets/cursor.cur'), auto;
+    font-size: 2em;
+	color: #365ea2;
+	background-color: transparent;
+	border: 10px solid #365ea2;;
+	position: relative;
+	transform: scale(.95);
+	transition: 0.2s;
+}
+
+.btn-sortear:hover{
+	transform: scale(1.05);
+	transition: .5s;
+	border: 10px solid #b80813;
+	color: #b80813;
+}

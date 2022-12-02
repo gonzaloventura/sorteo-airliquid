@@ -1,17 +1,25 @@
 import React from 'react'
 import './Winners.scss'
 
-const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
-  const listado = data;
+const Winners = ({data, premiosSorteados, setPremiosSorteados}) => {
+  const ganadores = [];
+  let listado = data;
+  if (localStorage.getItem('array')){
+    listado = JSON.parse(localStorage.getItem('array'))
+  }
+
 
   const r = obtenerValor(0,listado.length)
-  const ganador = listado[r];
+  let ganador = listado[r];
   if (ganador === undefined){
     ganador = listado[obtenerValor(0,listado.length)]
   }
-  premio[0].ganadores.push(ganador)
+  console.log(ganador)
+  ganadores.push(ganador)
   listado.splice(r, 1)
   setPremiosSorteados(1)
+
+  localStorage.setItem('array', JSON.stringify(listado))
 
 
 
@@ -21,7 +29,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
 
   return (
         <>
-        {premio[0].ganadores.map((ganador) => (
+        {ganadores.map((ganador) => (
                 <img alt={ganador} key={ganador} className='winnerimagen' src={require(`../../images/${ganador}`)} />
           ))}
     </>

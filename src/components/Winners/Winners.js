@@ -22,9 +22,7 @@ const Winners = ({data, premio, premiosSorteados, setPremiosSorteados}) => {
   return (
         <>
         {premio[0].ganadores.map((ganador) => (
-            <div key={ganador} className='winner'>
                 <img alt={ganador} key={ganador} className='winnerimagen' src={require(`../../images/${ganador}`)} />
-            </div>
           ))}
     </>
   )

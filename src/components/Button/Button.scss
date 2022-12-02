@@ -5,18 +5,19 @@
 }
 
 .btn-sortear {
+	font-family: 'Qatar', sans-serif;
     z-index: 1;
     margin-top: 40px;
 	padding: 20px;
 	height: 160px;	
-    border-radius: 0 50% 50% 50%;
+    border-radius: 10px;
     font-weight: 700;
     outline: none;
     cursor: url('../assets/cursor.cur'), auto;
     font-size: 2em;
-	color: #365ea2;
-	background-color: transparent;
-	border: 10px solid #365ea2;;
+	color: #fff;
+	background-color: #75AADB;
+	border: 10px solid #75AADB;;
 	position: relative;
 	transform: scale(.95);
 	transition: 0.2s;
@@ -25,6 +26,6 @@
 .btn-sortear:hover{
 	transform: scale(1.05);
 	transition: .5s;
-	border: 10px solid #b80813;
-	color: #b80813;
+	border: 10px solid #FCBF49;
+	color: #fff;
 }

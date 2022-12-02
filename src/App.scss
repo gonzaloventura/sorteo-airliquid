@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   width: 100%;
@@ -24,7 +25,10 @@ body {
   height: 100%;
   width: 100%;
 /*   background: #002766; */
-  background: #000;
+  background-image: url('./background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
   cursor: url('./components/assets/cursor.cur'), auto;
 }
@@ -99,8 +103,9 @@ body {
 }
 
 .brand{
-  margin-bottom: 20px;
-  height: 100px;
+  margin-bottom: 40px;
+  height: 125px;
+  border-radius: 10px;
 }
 
 .blankspace{

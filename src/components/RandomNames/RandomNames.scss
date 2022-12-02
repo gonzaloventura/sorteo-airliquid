@@ -3,28 +3,34 @@
     grid-template: "a a a a" auto;
     .box {
         margin: 0px 20px;
-        padding: 10px 40px;
+        padding: 10px 10px;
         list-style: none;
         max-height: 400px;
         overflow: hidden;
         max-width: 200px;
-        color: rgba(184, 8, 20, 1);
-        text-shadow: 0px 0px 4px rgba(184, 8, 20, 0.5);
+        color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.611);
+        border: 5px solid white;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
         
-        li{
+        img{
+            background-color: #75AADB;
+            border: 5px solid white;
+            padding: 8px 10px;
             font-size: 20px;
-            margin-bottom: 20px;
-            animation: ruleta 20s linear;
+            margin-bottom: 15px;
+            animation: ruleta 10s linear;
             animation-iteration-count: infinite;
-            text-transform: uppercase;
+            border-radius: 10px;
         }
     }
 }
 
 .speed{
     .box {
-        li{
-            animation: ruleta 2s linear;
+        img{
+            animation: ruleta 1s linear;
             animation-iteration-count: infinite;
         }
     }
@@ -41,19 +47,23 @@
 
   .blackblur{
     height: 30px;
-    background: #000000;
+    background: #691a40;
     z-index: 10;
-    width: 90%;
-    filter: blur(10px);
+    width: 75%;
+    filter: blur(5px);
     
   }
 
   .top{
     margin-bottom: -10px;
-    box-shadow: 0px 20px 15px #000000;
   }
 
   .bottom{
     margin-top: -10px;
-    box-shadow: 0px -20px 15px #000000;
+  }
+
+  .imgwinner{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
   }

@@ -27,7 +27,7 @@ const ListWinners = ({data, sorteo, setSorteo, premiosSorteados, setPremiosSorte
         <div className='winners'>
             <Winners data={data} premio={premios} premiosSorteados={premiosSorteados} setPremiosSorteados={setPremiosSorteados} />
         </div>
-        <button className="btn-reset" onClick={reset}>RESET</button>
+        <button className="btn-reset" onClick={reset}>¡Nuevo sorteo!</button>
     </div>
   )
 }

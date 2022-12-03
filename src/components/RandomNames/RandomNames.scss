@@ -20,7 +20,7 @@
             padding: 8px 10px;
             font-size: 20px;
             margin-bottom: 15px;
-            animation: ruleta 10s linear;
+            animation: ruleta 20s linear;
             animation-iteration-count: infinite;
             border-radius: 10px;
         }
@@ -41,7 +41,7 @@
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-4000px);
+        transform: translateY(-8340px);
     }
   }
 
